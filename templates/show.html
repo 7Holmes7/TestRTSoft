@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+</head>
+
+ <body>
+ {% if image %}
+     <p align="center"><img src="{{ image }}" width="800" height="600" alt="Your picture should be here, Sir"></p>
+     {% if msg %}
+         <h3 align="center">There are few pictures left in such categories. Try others!</h3>
+         {% endif %}
+{% else %}
+  <h1 align="center">No pictures with such categories or all are shown</h1>
+{% endif %}
+
+
+ </body>
+</html>
